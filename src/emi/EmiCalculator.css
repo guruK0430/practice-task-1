@@ -1,0 +1,173 @@
+.emi-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh
+}
+
+/*Input container*/
+
+.container-inputs {
+    width: 300px;
+    background-color:#fff;
+    height: 350px; 
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px #d9d7d7;
+    display: grid;
+    gap:20px;
+    padding: 0 20px;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    margin-right: 10px;
+}
+
+.Emi-Header-text{
+    margin-top: 20px;
+}
+
+.emi-input{
+    border-radius: 8px;
+    background-color: aqua;
+    padding-left: 30px;
+    font-size: large;
+    width: 100%;
+}
+
+.emi-input::-webkit-outer-spin-button,
+.emi-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emi-input:focus{
+    background-color: aqua;
+}
+
+.emi-input:nth-child(2){
+    background-color: rgb(255, 242, 241);
+    border:none;
+    background-image: url('../images/calendar.png');
+    background-size: 20px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.emi-input:nth-child(3){
+    background-color: rgb(249, 250, 210);
+    border:none;
+    background-image: url('../images/percent.png');
+    background-size: 20px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.emi-input:nth-child(4){
+    background-color: rgb(231, 255, 232);
+    border:none;
+    background-image: url('../images/money.png');
+    background-size: 20px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.emi-calcuatle-btn{
+    height:40px;
+    border:none;
+    border-radius: 20px;
+    max-width: 150px;
+    margin-left: 50px;
+    color: #fff;
+    background-color: rgb(39, 22, 66);
+    font-size: large;
+}
+
+.emi-calcuatle-btn:hover{
+    opacity: 0.7;
+}
+
+.emi-input:nth-child(2):hover{
+    background-color: rgb(247, 147, 139);
+}
+
+.emi-input:nth-child(3):hover{
+    background-color: rgb(253, 254, 159);
+}
+
+.emi-input:nth-child(4):hover{
+    background-color: rgb(186, 247, 188);
+}
+
+.emi-input:nth-child(2):focus{
+    background-color: rgb(247, 147, 139);
+    border: 3px solid rgb(255, 108, 108);
+    outline: none;
+}
+
+.emi-input:nth-child(3):focus{
+    background-color: rgb(253, 254, 159);
+    border: 3px solid rgb(230, 232, 99);;
+    outline: none;
+}
+
+.emi-input:nth-child(4):focus{
+    background-color: rgb(186, 247, 188);
+    border: 3px solid rgb(136, 255, 140);
+    outline: none;
+}
+
+.emi-input:nth-child(2)::placeholder {
+    color: red;
+}
+
+.emi-input::placeholder {
+    font-size: large;
+}
+
+
+/* result container*/
+
+.container-result-purple{
+    width: 300px;
+    height: 350px; 
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px #d9d7d7;
+    display: grid;
+    gap:30px;
+    padding: 0 20px;
+    grid-template-rows: 1fr 2fr 1fr;
+    background-color: rgb(95, 58, 241);
+}
+
+.result-container{
+    background-image: linear-gradient(rgb(59, 45, 218), rgb(95, 58, 241));
+    border-radius:200px;
+    position: relative;
+    
+}
+
+.result{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.container-result-purple h3, .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 600px)  {
+    .emi-container{
+        flex-direction: column;
+        min-height: 775px;
+        justify-content: space-around;
+    }
+
+
+}

@@ -1,0 +1,28 @@
+.layout-container{
+    background-color: black;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emi-page, .gallery-page{
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+.gallery-page{
+    margin-left: 20px;
+}
+
+.emi-page:hover, .gallery-page:hover{
+    opacity: 0.5;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
