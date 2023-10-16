@@ -1,22 +1,45 @@
 
 import './App.css';
 import { Link, Route, Routes} from "react-router-dom"
-import EmiCalculator from './emi/EmiCalculator';
-import Vgallery from './v-gallery/Vgallery';
-import Layout from './layout/Layout';
+import Layout from './layout/Layout' 
+import EmiCalculator from './emi/EmiCalculator' 
+import Vgallery from './v-gallery/Vgallery' 
+import Shoppingcart from './shopping-cart/ShoppingCart'
 
 
 function App() {
   
   return (<>
-    <div className='App'>
-    <Routes>
+    <div className="App">
+      <Routes>
+        <Route path='/shoppingCart' element={<Shoppingcart />}></Route>
         <Route path="/" element={<Layout />}></Route>
         <Route path="/emicalculator" element={<EmiCalculator />}></Route>
         <Route path="/videogallery" element={<Vgallery />}></Route>
         <Route path="*" element={<h2>Page not found</h2>}></Route>
       </Routes>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {/*<>
     <Routes>
         <Route path="/p" element={<About />}></Route>
