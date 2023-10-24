@@ -7,6 +7,7 @@ const Layout = () => {
       <Link to="/emicalculator" className='link' ><div className='emi-page'>EMI calculator</div></Link>
       <Link to="/videogallery" className='link' ><div className='gallery-page'>Video gallery</div></Link>
       <Link to="/shoppingCart" className='link' ><div className='gallery-page'>Shopping Cart</div></Link>
+      <Link to="/reacttable" className='link' ><div className='gallery-page'>React table</div></Link>
     </div>
   )
 }

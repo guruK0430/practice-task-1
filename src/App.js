@@ -5,6 +5,7 @@ import Layout from './layout/Layout'
 import EmiCalculator from './emi/EmiCalculator' 
 import Vgallery from './v-gallery/Vgallery' 
 import Shoppingcart from './shopping-cart/ShoppingCart'
+import ReactTable from './react-table/ReactTable';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}></Route>
         <Route path="/emicalculator" element={<EmiCalculator />}></Route>
         <Route path="/videogallery" element={<Vgallery />}></Route>
+        <Route path="/reacttable" element={<ReactTable />}></Route>
         <Route path="*" element={<h2>Page not found</h2>}></Route>
       </Routes>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Products from './products/Products'
 import Cart from './cart/Cart'
 
-const ShopingCart = () => {
+const ShoppingCart = () => {
   return (
     <div className='h-full bg-gray-200 box-border'>
       <Products />
@@ -11,4 +11,4 @@ const ShopingCart = () => {
   )
 }
 
-export default ShopingCart
+export default ShoppingCart

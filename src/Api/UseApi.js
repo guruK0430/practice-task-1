@@ -12,6 +12,7 @@ const UseApi = (url, options) => {
         try{
             const response = await axios.get(url, options,);
             setData(response)
+            console.log(response, "response")
         }
         catch(error){
             setError(error)
